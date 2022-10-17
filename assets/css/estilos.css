@@ -1,0 +1,169 @@
+body {
+    background-image: url(../images/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family:'VT323', monospace, sans-serif;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.element {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+  }
+  
+  .descricao::-webkit-scrollbar {
+    width: 6px;
+    height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+  }
+  
+  .descricao::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+  
+  .descricao::-webkit-scrollbar-thumb {
+    background-color: #02e08f;
+  }
+
+.cartao {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacao img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #02e08f;
+    border-radius: 60px;
+}
+
+.cartao .minhas-informacao .nome {
+    font-size: 26px;
+}
+
+.cartao .minhas-informacao .cargo {
+    font-size: 20px;
+    color:  #b8bbc5;
+}
+
+.minhas-informacao {
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+.cartao .conteudo {
+    margin-top: 15px;
+}
+
+.cartao .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img {
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .informacao-abas {
+    background-color: #262626;
+    
+}
+
+
+.cartao .abas .aba:hover {
+    background-color: #414141;
+}
+
+
+.informacao-abas .informacao {
+    min-height: 100px;
+    padding: 15px;
+    display: none;
+}
+
+.informacao-abas .informacao.selecionado {
+    display: block;
+}
+
+.informacao-abas .sub-titulo {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacao-abas .descricao {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacao-abas .descricao span {
+    color: #02d08f;
+}
+
+.informacao h3 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+
+.redes-sociais li a {
+    background-color: red;
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo {
+    background-color: #02d08f;
+}
+
+.redes-sociais .linkedin {
+    background-color: #1d87bd;
+
+}
+
+.redes-sociais .github {
+    background-color: #545454;
+
+}
