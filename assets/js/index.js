@@ -1,9 +1,7 @@
-
-alert("teste")
-// passo 1 - dar um jeito de pegar os elementos que representam as abas no html
+// passo 1 - pegar os elementos que representam as abas no html
 const abas = document.querySelectorAll(".aba")
 
-// passo 2 - dar um jeito de identificar o clique no elemento aba
+// passo 2 -  identificar o clique no elemento aba
 abas.forEach(aba => {
     aba.addEventListener("click", function () {
 
